@@ -1,0 +1,100 @@
+{
+    "name": "Maryam Attique",
+    "title": "Software Developer",
+    "contact": {
+        "location": "Lahore, Pakistan",
+        "phone": "+92 329 6201877",
+        "email": "maryamattique034@gmail.com",
+        "links": [
+            {
+                "label": "GitHub",
+                "url": "https://github.com/maryamattique034-spec"
+            },
+            {
+                "label": "LinkedIn",
+                "url": "https://linkedin.com/in/maryam-attique-497b34368"
+            }
+        ]
+    },
+    "summary": "Motivated and adaptable professional with a Computer Science background and 2 years of hands-on software development experience. Quick learner, strong communicator and reliable team member, comfortable taking on new roles and responsibilities.",
+    "section_order": [
+        "summary",
+        "education",
+        "experience",
+        "skills",
+        "projects",
+        "languages"
+    ],
+    "education": [
+        {
+            "institution": "Lahore College for Women University (LCWU)",
+            "degree": "BS Computer Science",
+            "period": "2021 - 2025",
+            "location": "Samanabad, Lahore",
+            "details": [
+                "CGPA: 3.5/4.0"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "role": "Python Developer",
+            "company": "Code Graphers",
+            "location": "Lahore, Pakistan",
+            "period": "July 2025 - August 2026",
+            "bullets": [
+                "Built and maintained REST APIs using Django REST Framework for core product features, including authentication, event management, team management, registrations, and other backend workflows.",
+                "Optimized database queries, reducing API response time by 40%.",
+                "Wrote and maintained PyTest unit tests for backend functionality.",
+                "Containerized applications using Docker to simplify deployment."
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "label": "Technical",
+            "items": [
+                "Python",
+                "Django",
+                "SQL",
+                "Git",
+                "Docker"
+            ]
+        },
+        {
+            "label": "Professional",
+            "items": [
+                "Problem Solving",
+                "Teamwork",
+                "Communication",
+                "Time Management",
+                "Quick Learning"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Trading Platform API",
+            "tech": "Python, Django REST Framework, PostgreSQL, Redis, Celery",
+            "link": "https://github.com/maryamattique034-spec/my-trading-project",
+            "bullets": [
+                "Built REST APIs for user authentication, account management, stock trading, and portfolio tracking",
+                "Implemented Buy/Sell order validation and transaction history using Django REST Framework",
+                "Used Redis for caching and Celery for automated CSV report generation and email delivery"
+            ]
+        }
+    ],
+    "certifications": [
+        "Certification Name, Provider"
+    ],
+    "languages": [
+        {
+            "name": "English",
+            "level": "Intermediate"
+        },
+        {
+            "name": "Urdu",
+            "level": "Native"
+        }
+    ]
+}

@@ -1,0 +1,124 @@
+{
+    "name": "Maryam Attique",
+    "title": "Python Django Developer",
+    "contact": {
+        "location": "Lahore, Pakistan",
+        "phone": "+92 329 6201877",
+        "email": "maryamattique034@gmail.com",
+        "links": [
+            {
+                "label": "GitHub",
+                "url": "https://github.com/maryamattique034-spec"
+            },
+            {
+                "label": "LinkedIn",
+                "url": "https://linkedin.com/in/maryam-attique-497b34368"
+            }
+        ]
+    },
+    "summary": "Python Django Developer with 2 years of experience building REST APIs and web applications. Skilled in database design, query optimization, third-party integrations and writing clean, tested code. Looking to contribute to scalable backend systems.",
+    "section_order": [
+        "summary",
+        "skills",
+        "experience",
+        "projects",
+        "education",
+        "languages"
+    ],
+    "skills": [
+        {
+            "label": "Backend",
+            "items": [
+                "Python",
+                "Django",
+                "Django REST Framework",
+                "FastAPI",
+                "Celery"
+            ]
+        },
+        {
+            "label": "Databases",
+            "items": [
+                "PostgreSQL",
+                "MySQL"
+            ]
+        },
+        {
+            "label": "DevOps & Tools",
+            "items": [
+                "Git",
+                "Docker",
+                "Linux",
+                "GitHub Actions"
+            ]
+        },
+        {
+            "label": "Testing",
+            "items": [
+                "PyTest",
+                "Unit Testing",
+                "Postman"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "role": "Python Developer",
+            "company": "Code Graphers",
+            "location": "Liberty Market, Gulberg, Lahore, Pakistan",
+            "period": "July 2025 - August 2026",
+            "bullets": [
+                "Built and maintained REST APIs using Django REST Framework for core product features, including authentication, event management, team management, registrations, and other backend workflows.",
+                "Optimized database queries, reducing API response time by 40%.",
+                "Wrote and maintained PyTest unit tests for backend functionality.",
+                "Containerized applications using Docker to simplify deployment."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Local Agent Hub",
+            "tech": "Python, LangGraph, MCP, Qwen, Chainlit, Ollama",
+            "link": "https://github.com/maryamattique034-spec/local-agent-hub",
+            "bullets": [
+                "Built a local AI agent using LangGraph with tool calling and multi-step workflows.",
+                "Integrated MCP tools for calculations, memory, task management, date/time, and webpage fetching.",
+                "Used Qwen with Ollama to run the AI workflow locally and built a Chainlit interface for interaction."
+            ]
+        },
+        {
+            "name": "Trading Platform API",
+            "tech": "Python, Django REST Framework, PostgreSQL, Redis, Celery",
+            "link": "https://github.com/maryamattique034-spec/my-trading-project",
+            "bullets": [
+                "Built REST APIs for user authentication, account management, stock trading, and portfolio tracking",
+                "Implemented Buy/Sell order validation and transaction history using Django REST Framework",
+                "Used Redis for caching and Celery for automated CSV report generation and email delivery"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Lahore College for Women University (LCWU)",
+            "degree": "BS Computer Science",
+            "period": "2021 - 2025",
+            "location": "Samanabad, Lahore",
+            "details": [
+                "CGPA: 3.5/4.0"
+            ]
+        }
+    ],
+    "certifications": [
+        "Python for Everybody, Coursera"
+    ],
+    "languages": [
+        {
+            "name": "English",
+            "level": "Intermediate"
+        },
+        {
+            "name": "Urdu",
+            "level": "Native"
+        }
+    ]
+}

@@ -43,11 +43,7 @@ def item(head, period="", sub="", location="", body=""):
 
 
 def summary(d):
-    return sec(
-        "Summary",
-        f"<p>{e(d['summary'])}</p>"
-    ) if d.get("summary") else ""
-
+    return f'<p class="summary">{e(d["summary"])}</p>' if d.get("summary") else ""
 
 def experience(d):
     out = ""
@@ -90,16 +86,19 @@ def education(d):
     out = ""
 
     for x in d.get("education", []):
-        out += item(
-            e(x["institution"]),
-            x.get("period", ""),
-            x.get("degree", ""),
-            x.get("location", ""),
-            ul(x.get("details"))
+        period = f'<span class="meta">{e(x["period"])}</span>' if x.get("period") else ""
+        degree = e(x.get("degree", ""))
+        location = f'<span class="meta">{e(x["location"])}</span>' if x.get("location") else ""
+
+        out += (
+            f'<div class="item">'
+            f'<div class="row"><h3>{e(x.get("institution") or x.get("school", ""))}</h3>{period}</div>'
+            f'<div class="row"><span class="sub">{degree}</span>{location}</div>'
+            f'{ul(x.get("details"))}'
+            f'</div>'
         )
 
     return sec("Education", out)
-
 
 def skills(d):
     rows = "".join(

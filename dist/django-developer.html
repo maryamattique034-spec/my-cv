@@ -1,234 +1,129 @@
-<!doctype html>
-<html lang="en">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Maryam Attique - Python Django Developer</title><style>:root {
+    --ink: #000000;
+    --muted: #000000;
+    --accent: #000000;
+    --line: #000000;
+}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Maryam Attique - Python Django Developer</title>
-    <style>
-        :root {
-            --ink: #000000;
-            --muted: #000000;
-            --accent: #000000;
-            --line: #000000;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        * {
-            box-sizing: border-box;
-        }
+body {
+    margin: 0;
+    background: #eef1f4;
+    color: var(--ink);
+    font: 10.5pt/1.45 Calibri, "Segoe UI", Arial, sans-serif;
+}
 
-        body {
-            margin: 0;
-            background: #eef1f4;
-            color: var(--ink);
-            font: 10.5pt/1.45 Calibri, "Segoe UI", Arial, sans-serif;
-        }
+.page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 12px auto;
+    padding: 16mm 18mm;
+    background: #fff;
+}
 
-        .page {
-            width: 210mm;
-            min-height: 297mm;
-            margin: 12px auto;
-            padding: 16mm 18mm;
-            background: #fff;
-        }
+h1 {
+    margin: 0;
+    font-size: 24pt;
+    letter-spacing: .3px;
+}
 
-        h1 {
-            margin: 0;
-            font-size: 24pt;
-            letter-spacing: .3px;
-        }
+.title {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 12pt;
+    margin-top: 2px;
+}
 
-        .title {
-            color: var(--accent);
-            font-weight: 600;
-            font-size: 12pt;
-            margin-top: 2px;
-        }
+.contact {
+    color: var(--muted);
+    font-size: 9.5pt;
+    margin-top: 6px;
+}
 
-        .contact {
-            color: var(--muted);
-            font-size: 9.5pt;
-            margin-top: 6px;
-        }
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
 
-        a {
-            color: var(--accent);
-            text-decoration: none;
-        }
+section {
+    margin-top: 14px;
+}
 
-        section {
-            margin-top: 14px;
-        }
+h2 {
+    margin: 0 0 6px;
+    padding-bottom: 3px;
+    font-size: 11.5pt;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    color: var(--accent);
+    border-bottom: 1.5px solid var(--line);
+}
 
-        h2 {
-            margin: 0 0 6px;
-            padding-bottom: 3px;
-            font-size: 11.5pt;
-            text-transform: uppercase;
-            letter-spacing: .8px;
-            color: var(--accent);
-            border-bottom: 1.5px solid var(--line);
-        }
+.item {
+    margin-bottom: 9px;
+    break-inside: avoid;
+}
 
-        .item {
-            margin-bottom: 9px;
-            break-inside: avoid;
-        }
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: baseline;
+}
 
-        .row {
-            display: flex;
-            justify-content: space-between;
-            gap: 12px;
-            align-items: baseline;
-        }
+h3 {
+    margin: 0;
+    font-size: 10.5pt;
+}
 
-        h3 {
-            margin: 0;
-            font-size: 10.5pt;
-        }
+.tech {
+    font-weight: 400;
+    color: var(--muted);
+}
 
-        .tech {
-            font-weight: 400;
-            color: var(--muted);
-        }
+.meta {
+    color: var(--muted);
+    font-size: 9.5pt;
+    white-space: nowrap;
+}
 
-        .meta {
-            color: var(--muted);
-            font-size: 9.5pt;
-            white-space: nowrap;
-        }
+.sub {
+    color: var(--muted);
+    font-size: 9.5pt;
+}
 
-        .sub {
-            color: var(--muted);
-            font-size: 9.5pt;
-        }
+ul {
+    margin: 3px 0 0;
+    padding-left: 18px;
+}
 
-        ul {
-            margin: 3px 0 0;
-            padding-left: 18px;
-        }
+li {
+    margin-bottom: 1px;
+}
 
-        li {
-            margin-bottom: 1px;
-        }
+p {
+    margin: 0;
+}
 
-        p {
-            margin: 0;
-        }
+.skill {
+    margin-bottom: 2px;
+}
 
-        .skill {
-            margin-bottom: 2px;
-        }
+@page {
+    size: A4;
+    margin: 0;
+}
 
-        @page {
-            size: A4;
-            margin: 0;
-        }
+@media print {
+    body {
+        background: #fff;
+    }
 
-        @media print {
-            body {
-                background: #fff;
-            }
-
-            .page {
-                margin: 0;
-                box-shadow: none;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <main class="page">
-        <header>
-            <h1>Maryam Attique</h1>
-            <div class="title">Python Django Developer</div>
-            <div class="contact">Lahore, Pakistan &nbsp;|&nbsp; +92 329 6201877 &nbsp;|&nbsp; maryamattique034@gmail.com
-                &nbsp;|&nbsp; <a href="https://github.com/maryamattique034-spec">GitHub</a> &nbsp;|&nbsp; <a
-                    href="https://linkedin.com/in/maryam-attique-497b34368">LinkedIn</a></div>
-        </header>
-        <section>
-            <h2>Summary</h2>
-            <p>Python Django Developer with 2 years of experience building REST APIs and web applications. Skilled in
-                database design, query optimization, third-party integrations and writing clean, tested code. Looking to
-                contribute to scalable backend systems.</p>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <div class="skill"><b>Backend:</b> Python, Django, Django REST Framework, FastAPI, Celery</div>
-            <div class="skill"><b>Databases:</b> PostgreSQL, MySQL</div>
-            <div class="skill"><b>DevOps &amp; Tools:</b> Git, Docker, Linux, GitHub Actions</div>
-            <div class="skill"><b>Testing:</b> PyTest, Unit Testing, Postman</div>
-        </section>
-        <section>
-            <h2>Work Experience</h2>
-            <div class="item">
-                <div class="row">
-                    <h3>Python Developer &bull; Code Graphers</h3><span class="meta">July 2025 - August 2026</span>
-                </div>
-                <div class="sub">Liberty Market, Gulberg, Lahore, Pakistan</div>
-                <ul>
-                    <li>Built and maintained REST APIs using Django REST Framework for core product features, including
-                        authentication, event management, team management, registrations, and other backend workflows.
-                    </li>
-                    <li>Optimized database queries, reducing API response time by 40%.</li>
-                    <li>Wrote and maintained PyTest unit tests for backend functionality.</li>
-                    <li>Containerized applications using Docker to simplify deployment.</li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <div class="item">
-                <div class="row">
-                    <h3>Local Agent Hub <span class="tech">| Python, LangGraph, MCP, Qwen, Chainlit, Ollama</span> <a
-                            href="https://github.com/maryamattique034-spec/local-agent-hub">github.com/maryamattique034-spec/local-agent-hub</a>
-                    </h3>
-                </div>
-                <ul>
-                    <li>Built a local AI agent using LangGraph with tool calling and multi-step workflows.</li>
-                    <li>Integrated MCP tools for calculations, memory, task management, date/time, and webpage fetching.
-                    </li>
-                    <li>Used Qwen with Ollama to run the AI workflow locally and built a Chainlit interface for
-                        interaction.</li>
-                </ul>
-            </div>
-            <div class="item">
-                <div class="row">
-                    <h3>Trading Platform API <span class="tech">| Python, Django REST Framework, PostgreSQL, Redis,
-                            Celery</span> <a
-                            href="https://github.com/maryamattique034-spec/my-trading-project">github.com/maryamattique034-spec/my-trading-project</a>
-                    </h3>
-                </div>
-                <ul>
-                    <li>Built REST APIs for user authentication, account management, stock trading, and portfolio
-                        tracking</li>
-                    <li>Implemented Buy/Sell order validation and transaction history using Django REST Framework</li>
-                    <li>Used Redis for caching and Celery for automated CSV report generation and email delivery</li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h2>Education</h2>
-            <div class="item">
-                <div class="row">
-                    <h3>Lahore College for Women University (LCWU)</h3><span class="meta">2021 - 2025</span>
-                </div>
-                <div class="sub">BS Computer Science</div>
-                <div class="sub">Samanabad, Lahore</div>
-                <ul>
-                    <li>CGPA: 3.5/4.0</li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h2>Languages</h2>
-            <ul>
-                <li>English - Intermediate</li>
-                <li>Urdu - Native</li>
-            </ul>
-        </section>
-    </main>
-</body>
-
-</html>
+    .page {
+        margin: 0;
+        box-shadow: none;
+    }
+}</style></head><body><main class="page"><header><h1>Maryam Attique</h1><div class="title">Python Django Developer</div><div class="contact">Lahore, Pakistan &nbsp;|&nbsp; +92 329 6201877 &nbsp;|&nbsp; maryamattique034@gmail.com &nbsp;|&nbsp; <a href="https://github.com/maryamattique034-spec">github.com/maryamattique034-spec</a> &nbsp;|&nbsp; <a href="https://linkedin.com/in/maryam-attique-497b34368">linkedin.com/in/maryam-attique-497b34368</a></div></header><section><h2>Summary</h2><p>Python Django Developer with 2 years of experience building REST APIs and web applications. Skilled in database design, query optimization, third-party integrations and writing clean, tested code. Looking to contribute to scalable backend systems.</p></section><section><h2>Skills</h2><div class="skill"><b>Backend:</b> Python, Django, Django REST Framework, FastAPI, Celery</div><div class="skill"><b>Databases:</b> PostgreSQL, MySQL</div><div class="skill"><b>DevOps &amp; Tools:</b> Git, Docker, Linux, GitHub Actions</div><div class="skill"><b>Testing:</b> PyTest, Unit Testing, Postman</div></section><section><h2>Work Experience</h2><div class="item"><div class="row"><h3>Python Developer &bull; Code Graphers</h3><span class="meta">July 2025 - August 2026</span></div><div class="sub">Liberty Market, Gulberg, Lahore, Pakistan</div><ul><li>Built and maintained REST APIs using Django REST Framework for core product features, including authentication, event management, team management, registrations, and other backend workflows.</li><li>Optimized database queries, reducing API response time by 40%.</li><li>Wrote and maintained PyTest unit tests for backend functionality.</li><li>Containerized applications using Docker to simplify deployment.</li></ul></div></section><section><h2>Projects</h2><div class="item"><div class="row"><h3>Local Agent Hub <span class="tech">| Python, LangGraph, MCP, Qwen, Chainlit, Ollama</span> <a href="https://github.com/maryamattique034-spec/local-agent-hub">github.com/maryamattique034-spec/local-agent-hub</a></h3></div><ul><li>Built a local AI agent using LangGraph with tool calling and multi-step workflows.</li><li>Integrated MCP tools for calculations, memory, task management, date/time, and webpage fetching.</li><li>Used Qwen with Ollama to run the AI workflow locally and built a Chainlit interface for interaction.</li></ul></div><div class="item"><div class="row"><h3>Trading Platform API <span class="tech">| Python, Django REST Framework, PostgreSQL, Redis, Celery</span> <a href="https://github.com/maryamattique034-spec/my-trading-project">github.com/maryamattique034-spec/my-trading-project</a></h3></div><ul><li>Built REST APIs for user authentication, account management, stock trading, and portfolio tracking</li><li>Implemented Buy/Sell order validation and transaction history using Django REST Framework</li><li>Used Redis for caching and Celery for automated CSV report generation and email delivery</li></ul></div></section><section><h2>Education</h2><div class="item"><div class="row"><h3>Lahore College for Women University (LCWU)</h3><span class="meta">2021 - 2025</span></div><div class="sub">BS Computer Science</div><div class="sub">Samanabad, Lahore</div><ul><li>CGPA: 3.5/4.0</li></ul></div></section><section><h2>Languages</h2><ul><li>English - Intermediate</li><li>Urdu - Native</li></ul></section></main></body></html>

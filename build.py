@@ -161,7 +161,7 @@ def header(d):
     ]
 
     parts += [
-        f'<a href="{e(l["url"])}">{e(l["label"])}</a>'
+       f'<a href="{e(l["url"])}">{e(l["url"].replace("https://", ""))}</a>'
         for l in c.get("links", [])
     ]
 
@@ -236,6 +236,6 @@ def main():
         encoding="utf-8"
     )
 
-    
+
 if __name__ == "__main__":
     main()

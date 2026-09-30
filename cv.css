@@ -127,3 +127,14 @@ p {
         box-shadow: none;
     }
 }
+
+
+h3 a {
+    font-weight: 400;
+    font-size: 9.5pt;
+}
+
+
+.contact+.contact {
+    margin-top: 2px;
+}

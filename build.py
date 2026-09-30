@@ -12,6 +12,11 @@ DIST = ROOT / "dist"
 CSS = (ROOT / "cv.css").read_text(encoding="utf-8")
 
 
+def short(url):
+    return (url.replace("https://", "").replace("http://", "")
+               .replace("www.", "").rstrip("/"))
+
+
 def ul(items):
     return (
         "<ul>" + "".join(f"<li>{e(i)}</li>" for i in items) + "</ul>"
@@ -65,24 +70,17 @@ def projects(d):
     out = ""
 
     for x in d.get("projects", []):
-        head = e(x["name"])
-
-        if x.get("tech"):
-            head += f' <span class="tech">| {e(x["tech"])}</span>'
-
+        link = ""
         if x.get("link"):
-            head += (
-                f' <a href="{e(x["link"])}">'
-                f'{e(x["link"].replace("https://", ""))}'
-                f'</a>'
-            )
+            link = f'<a class="meta" href="{e(x["link"])}">{e(short(x["link"]))}</a>'
 
-        out += item(
-            head,
-            "",
-            "",
-            "",
-            ul(x.get("bullets"))
+        tech = f'<div class="sub">{e(x["tech"])}</div>' if x.get("tech") else ""
+
+        out += (
+            f'<div class="item">'
+            f'<div class="row"><h3>{e(x["name"])}</h3>{link}</div>'
+            f'{tech}{ul(x.get("bullets"))}'
+            f'</div>'
         )
 
     return sec("Projects", out)
@@ -150,26 +148,22 @@ DEFAULT_ORDER = [
     "certifications",
 ]
 
-
 def header(d):
     c = d.get("contact", {})
+    sep = " &nbsp;|&nbsp; "
 
-    parts = [
-        e(c[k])
-        for k in ("location", "phone", "email")
-        if c.get(k)
-    ]
-
-    parts += [
-       f'<a href="{e(l["url"])}">{e(l["url"].replace("https://", ""))}</a>'
+    line1 = sep.join(e(c[k]) for k in ("location", "phone", "email") if c.get(k))
+    line2 = sep.join(
+        f'<a href="{e(l["url"])}">{e(short(l["url"]))}</a>'
         for l in c.get("links", [])
-    ]
+    )
 
     return (
         f'<header>'
         f'<h1>{e(d["name"])}</h1>'
         f'<div class="title">{e(d.get("title", ""))}</div>'
-        f'<div class="contact">{" &nbsp;|&nbsp; ".join(parts)}</div>'
+        f'<div class="contact">{line1}</div>'
+        f'<div class="contact">{line2}</div>'
         f'</header>'
     )
 
